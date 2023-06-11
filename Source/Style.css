@@ -1,0 +1,404 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("Plants/milky-way-full-stars-space.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px) grayscale(0);
+    cursor: url("Cursor/default.cur"), default;
+
+}
+
+/* Text--------------------------------
+----------------- */
+h1{
+    font-size: 2.5rem;
+    color: rgb(218, 218, 218);
+    transition: 0.5s;
+}
+h1:hover{
+    text-shadow: 0 0 5px rgb(194, 194, 194);
+}
+.Title{
+    position: absolute;
+    left: 2.5vw;
+}
+
+p span{
+    color: rgb(194, 194, 194);
+    font-size: 1.5rem;
+    transition: 0.25s;
+    cursor: url("Cursor/pencil.cur"), auto;
+}
+p span:hover{
+    color: rgb(240, 240, 240);
+}
+p::selection {
+    background-color: rgb(65, 65, 65, 0.65);
+    color: white;
+}
+  
+p span::selection {
+    background-color: rgb(65, 65, 65, 0.65);
+    color: white;
+}
+
+/* Solar--------------------------------
+----------------- */
+.solar{
+    width: 90vw;
+    height: 75vh;
+    background-color: black;
+    background-image: url(Plants/space.png);
+    background-size: 50%;
+    position: absolute;
+    left: 5%;
+    top: 20vh;
+    border-radius: 50px;
+    transition: 1s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2.5px 2.5px 20px 2.5px;
+}
+.solar:hover{
+    box-shadow: 7.5px 7.5px 50px 7.5px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.solar .contian{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solar .a{
+    display: none;
+}
+
+
+.solar .Sun{
+    width: 5rem;
+    height: 5rem;
+    background-image: url("Plants/sun.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 3rem orangered;
+    animation: 30s Rotat linear infinite;
+}
+
+/* mercury --------------------- */
+.solar .mercury{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: 7s Rotat linear infinite;
+}
+.solar .mercury::before{
+    content: '';
+    background-image: url("Plants/mercury.png");
+    background-size: cover;
+    position: absolute;
+    top: 0.7rem;
+    right: 1.2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    animation: 1s Rotat linear infinite;
+}
+
+
+/* venus --------------------- */
+.solar .venus{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    animation: 7s Rotat linear infinite;
+}
+.solar .venus::before{
+    content: '';
+    background-image: url("Plants/venus.png");
+    background-size: cover;
+    position: absolute;
+    top: 2.7rem;
+    right: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    animation: 1s Rotat linear infinite;
+}
+
+/* earth -------------------- */
+.solar .earth{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    animation: 10s Rotat linear infinite;
+}
+.solar .earth::before{
+    content: '';
+    background-image: url("Plants/Earth.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 3.5rem;
+    right: 3.2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    animation: 1s Rotat linear infinite;
+}
+
+/* mars -------------------- */
+.solar .mars{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+    animation: 30s Rotat linear infinite;
+}
+.solar .mars::before{
+    content: '';
+    background-image: url("Plants/mars.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 4.5rem;
+    right: 5.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 100%;
+    animation: 1s Rotat linear infinite;
+}
+
+/* jupiter -------------------- */
+.solar .jupiter{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 60rem;
+    height: 60rem;
+    animation: 60s Rotat linear infinite;
+}
+.solar .jupiter::before{
+    content: '';
+    background-image: url("Plants/jupiter.png");
+    background-size: cover;
+    position: absolute;
+    top: 7.9rem;
+    right: 5.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    animation: 2.5s Rotat linear infinite;
+}
+
+/* saturn -------------------- */
+.solar .saturn{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 75rem;
+    height: 75rem;
+    animation: 100s Rotat linear infinite;
+}
+.solar .saturn::before{
+    content: '';
+    background-image: url("Plants/saturn 1.png");
+    background-size: cover;
+    position: absolute;
+    top: 10rem;
+    right: 8.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    animation: 4s Rotat linear infinite;
+}
+.solar .saturn::after{
+    content: '';
+    background-image: url("Plants/saturn 2.png");
+    background-size: cover;
+    position: absolute;
+    top: 8.5rem;
+    right: 6.5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    animation: 4s Rotat linear infinite;
+}
+
+/* uranus -------------------- */
+.solar .uranus{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 92.5rem;
+    height: 92.5rem;
+    animation: 150s Rotat linear infinite;
+}
+.solar .uranus::before{
+    content: '';
+    background-image: url("Plants/uranus.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 11.8rem;
+    right: 12rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    animation: 4s Rotat linear infinite;
+}
+
+/* neptune -------------------- */
+.solar .neptune{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1rem 0.1rem 0 0;
+    border-radius: 50%;
+    width: 115rem;
+    height: 115rem;
+    animation: 200s Rotat linear infinite;
+}
+.solar .neptune::before{
+    content: '';
+    background-image: url("Plants/neptune.png");
+    background-size: cover;
+    position: absolute;
+    top: 15.5rem;
+    right: 16rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    animation: 4s Rotat linear infinite;
+}
+
+/* Buttons -------------------------------
+----------------- */
+.solar button{
+    border: none;
+    background-color: rgba(37, 37, 37, 0.5);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 100;
+    position: absolute;
+    right: 1.5vw;
+    width: 5vw;
+    height: 5vw;
+    transition: 0.3s;
+}
+.solar :nth-child(3){
+    bottom: 6.5vw;
+    border-radius: 50px 50px 0 0;
+    border-bottom: 1px solid rgba(114, 114, 114, 0.5);
+}
+.solar :nth-child(2){
+    bottom: 1.5vw;
+    border-radius: 0 0 50px 50px;
+}
+.solar button:hover{
+    background-color: rgba(114, 114, 114, 0.5);
+}
+.solar button:active{
+    background-color: rgba(187, 187, 187, 0.5);
+}
+
+/* Main ----------------------------------
+----------------- */
+.main{
+    width: 90%;
+    position: absolute;
+    top: 100vh;
+    left: 5vw;
+}
+
+.main .sun{
+    position: relative;
+    top: 5rem;
+}
+
+.main .mercury{
+    position: relative;
+    top: 15rem;
+}
+
+.main .title{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+/* img------------------------------------
+------------------------- */
+.main .i1{
+    border-radius: 100%;
+    width:3rem;
+    height: 3rem;
+    display: inline;
+    transition: 0.5s;
+}
+.main .i1:hover{
+    transform: scale(1.15);
+}
+
+.main .title .suni:hover{
+    box-shadow: 0 0 1rem orangered;
+}
+.main .i2{
+    width: 20rem;
+    float: right;
+    margin: 0 1rem 0 1rem;
+    opacity: 0.5;
+    border-radius: 2.5rem;
+    box-shadow: 2.5px 2.5px 20px 2.5px;
+    transition: 0.5s;
+}
+.main .i2:hover{
+    transform: scale(1.025);
+    opacity: 0.75;
+}
+
+
+/* text-------------------------------------
+----------------- */
+.main h1{
+    display: inline;
+}
+
+/* Animation------------------------------
+----------------- */
+@keyframes Rotat{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
